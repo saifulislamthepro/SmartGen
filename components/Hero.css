@@ -15,6 +15,9 @@
   justify-content: center;
   align-items: center;
 }
+.hero-text{
+  width: 100%;
+}
 .hero-text p{
   letter-spacing: 1px;
   font-size: 16px;
@@ -28,7 +31,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 8px 0;
   border-radius: 10px;
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -69,7 +71,7 @@
     line-height: 1.5rem;
   }
   .hero-text h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 38px;
   }
 }
