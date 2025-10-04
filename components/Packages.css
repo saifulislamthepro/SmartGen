@@ -1,0 +1,85 @@
+/* homepage.css */
+
+.packages {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.packages h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.package-card {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  border-color: orangered;
+}
+
+.package-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: orangered;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 6px;
+}
+
+.package-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.package-card li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+.package-card li::before {
+  content: "✓"; /* Unicode checkmark */
+  color: #FF6A00; /* Your brand accent */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.package-button {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.package-button:hover {
+  background-color: rgb(255, 103, 48);
+}

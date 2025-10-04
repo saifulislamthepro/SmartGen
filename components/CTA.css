@@ -1,0 +1,21 @@
+.cta-banner {
+  background: linear-gradient(to right, #FF6A00, #FFB347);
+  color: #fff;
+  text-align: center;
+  padding: 80px 40px;
+}
+.cta-action {
+  margin: 1rem;
+  background: orangered;
+  color: #ffffff;
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cta-action:hover{
+  font-size: large;
+  border: 2px solid orange;
+  box-shadow: 5px 5px 10px rgba(111, 111, 111, 0.5)
+}
