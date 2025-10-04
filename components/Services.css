@@ -1,0 +1,37 @@
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 1200px;
+}
+
+.hero-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgb(0, 119, 255);
+    border-radius: 10px;
+}
+.hero-card img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.hero-card h2{
+    font-size: 1.5rem;
+    padding: 4px;
+    color: rgb(0, 84, 153);
+}
+
+@media (max-width: 760px) {
+    .hero-card{
+        grid-column: span 3;
+    }
+}

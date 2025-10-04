@@ -30,7 +30,6 @@ const packages: Package[] = [
 export default function Packages() {
   return (
     <section className="packages">
-      <h2>Choose Your Package</h2>
       <div className="package-grid">
         {packages.map((pkg, index) => (
           <div key={index} className="package-card">

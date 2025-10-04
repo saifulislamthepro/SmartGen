@@ -1,25 +1,28 @@
 /* homepage.css */
 
 .packages {
-  padding: 2rem;
   background-color: #f9f9f9;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
-.packages h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #333;
-}
 
 .package-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 1200px;
 }
 
 .package-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   border: 2px solid #e0e0e0;
   border-radius: 12px;
@@ -82,4 +85,10 @@
 
 .package-button:hover {
   background-color: rgb(255, 103, 48);
+}
+
+@media (max-width:760px) {
+  .package-card{
+    grid-column: span 3;
+  }
 }
