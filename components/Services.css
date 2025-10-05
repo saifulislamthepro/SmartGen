@@ -1,3 +1,18 @@
+
+.service-page{
+    padding: 4rem 0;
+    background-color: #dafeff;
+}
+
+.service-page h2{
+    font-size: 2rem;
+    color: rgb(40, 47, 54);
+    text-align: center;
+    padding: 1rem;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
 .service-container{
     display: flex;
     justify-content: center;
@@ -17,7 +32,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 02px solid rgb(194, 194, 194);
     border-radius: 10px;
   transition: transform 0.3s ease;
 }

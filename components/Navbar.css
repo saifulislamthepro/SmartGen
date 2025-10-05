@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 1000;
+  z-index: 2000;
   background: #ffffff;
   width: 100%;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
@@ -39,6 +39,47 @@
   font-size: large;
   transition: color 0.3s ease;
 }
+
+.web-navbar-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.web-navbar-links .dropbtn {
+  cursor: pointer;
+  color: #333;
+}
+
+
+.web-navbar-links .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 400px;
+  z-index: 1;
+  top: 100%;
+  left: -15;
+}
+
+.web-navbar-links .dropdownContent a {
+  display: block;
+  padding: 0.75rem ;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.web-navbar-links .dropdownContent a:hover {
+  background-color: #f0f0f0;
+}
+
+.web-navbar-links .dropdown:hover .dropdownContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
 
 .navbar-links{
   display: none;
@@ -73,6 +114,11 @@
   cursor: pointer;
   padding: 0;
   box-sizing: content-box;
+  border: 1px solid rgb(233, 233, 233);
+  padding: .7rem;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  z-index: 3000;
 }
 
 .bar {
@@ -85,6 +131,42 @@
   transform: translateZ(0);
 }
 
+.m-dropdown{
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #f0f0f0;
+}
+
+.m-dropdownContent {
+  display: none;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.m-dropdownContent a{
+  border-bottom: 1px solid white;
+}
+
+.m-dropdownContent.active{
+  display: flex;
+  flex-direction: column;
+}
+
+.pm-dropdownContent {
+  width: 100%;
+  flex-direction: column;
+  margin-left: 2rem;
+  display: none;
+}
+
+.pm-dropdownContent a{
+  border-bottom: 1px solid white;
+}
+
+.pm-dropdownContent.active{
+  display: flex;
+}
 
 /* Animation when menu is open */
 .navbar-toggle.open .bar:nth-child(1) {
@@ -128,9 +210,10 @@
   }
 
   .navbar-links a{
-    background: rgba(0,0,0,0.1);
+    background: #f0f0f0;
     width: 100%;
     padding: 1rem 2rem;
+    z-index: 1500;
   }
 
   .navbar-links.active {

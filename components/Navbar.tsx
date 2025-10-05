@@ -8,6 +8,8 @@ import './Navbar.css';
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropActive, setDrop] = useState(false);
+  const [pdropActive, setpDrop] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   
 
@@ -43,8 +45,26 @@ export default function Navbar() {
 
         <nav className={`web-navbar-links`}>
           <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/packages">Packages</Link>
+          <div className="dropdown">
+          <Link href="/#" className='dropbtn'>Services ▾</Link>
+            <div className="dropdownContent">
+              <a href="/website-development-in-Bangladesh">Web Development</a>
+              <a href="/graphics-design">Graphics and Design</a>
+              <a href="/video-making">Promotional Video</a>
+              <a href="/video-editing">Video editing</a>
+              <a href="/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
+              <a href="/mobile-app-development">Mobile App Development</a>
+            </div>
+          </div>
+          <div className="dropdown">
+            <Link href="/#" className='dropbtn'>Packages ▾</Link>
+            <div className="dropdownContent">
+              <a href="/starter-package">Starter Package</a>
+              <a href="/business-package">Business Package</a>
+              <a href="/premium-package">Premium Package</a>
+              <a href="/premium-package">Custom Package</a>
+            </div>
+          </div>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/contact">Contact</Link>
         </nav>
@@ -62,8 +82,23 @@ export default function Navbar() {
 
         <nav className={`navbar-links ${menuOpen ? 'active' : ''}`}>
           <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/packages">Packages</Link>
+          <div className='m-dropdown' onClick={()=> {setDrop(!dropActive)}}>Services ▾</div>
+            <div className={`m-dropdownContent ${dropActive ? 'active' : ''}`}>
+              <a href="/website-development-in-Bangladesh">Web Development</a>
+              <a href="/expert-digital-marketing-in-Bangladesh">Graphics and Design</a>
+              <a href="/video-making">Promotional Video</a>
+              <a href="/video-editing">Video editing</a>
+              <a href="/social-media-manager">Social Media Manager</a>
+              <a href="/mobile-app-development">Mobile App Development</a>
+            </div>
+            
+          <div className='m-dropdown' onClick={()=> {setpDrop(!pdropActive)}}>Packages ▾</div>
+            <div className={`pm-dropdownContent ${pdropActive ? 'active' : ''}`}>
+              <a href="/starter-package">Starter Package</a>
+              <a href="/business-package">Business package</a>
+              <a href="/premium-package">Premium Package</a>
+              <a href="/premium-package">Custom Package</a>
+            </div>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/contact">Contact</Link>
         </nav>

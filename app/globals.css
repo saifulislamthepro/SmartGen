@@ -36,12 +36,6 @@ a {
   text-decoration: none;
 }
 
-h2{
-  text-align: center;
-  margin-top: 10px;
-  font-size: 2rem;
-  color: #00357a;
-}
 
 @media (prefers-color-scheme: dark) {
   html {

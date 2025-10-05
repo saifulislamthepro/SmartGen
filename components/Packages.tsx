@@ -29,20 +29,23 @@ const packages: Package[] = [
 
 export default function Packages() {
   return (
-    <section className="packages">
-      <div className="package-grid">
-        {packages.map((pkg, index) => (
-          <div key={index} className="package-card">
-            <h3>{pkg.name.toUpperCase()}</h3>
-            <ul>
-              {pkg.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-            <button className="package-button">Start Now</button>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="pack-page">
+      <h2>Choose Any Package You Need</h2>
+      <section className="packages">
+        <div className="package-grid">
+          {packages.map((pkg, index) => (
+            <div key={index} className="package-card">
+              <h3>{pkg.name.toUpperCase()}</h3>
+              <ul>
+                {pkg.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+              <button className="package-button">Start Now</button>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
