@@ -9,7 +9,7 @@
     color: rgb(40, 47, 54);
     text-align: center;
     padding: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     font-weight: bolder;
 }
 
@@ -23,7 +23,7 @@
 .hero-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 6rem;
     max-width: 1200px;
 }
 

@@ -95,6 +95,33 @@
   background-color: rgb(255, 103, 48);
 }
 
+.custom-package{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.custom{
+  text-align: center;
+  font-size: 2rem;
+  color: #555;
+}
+
+.contact-btn{
+  padding: 1rem 2rem;
+  font-size: larger;
+  font-weight: bold;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contact-btn:hover{
+  background-color: #ff9b54;
+  scale: 1.1;
+}
 @media (max-width:760px) {
   .package-card{
     grid-column: span 3;

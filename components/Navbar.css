@@ -12,7 +12,7 @@
   padding: 10px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   z-index: 2000;
   background: #ffffff;
   width: 100%;
@@ -72,6 +72,7 @@
 
 .web-navbar-links .dropdownContent a:hover {
   background-color: #f0f0f0;
+  color:#FF6A00;
 }
 
 .web-navbar-links .dropdown:hover .dropdownContent {

@@ -46,18 +46,18 @@ export default function Navbar() {
         <nav className={`web-navbar-links`}>
           <Link href="/">Home</Link>
           <div className="dropdown">
-          <Link href="/#" className='dropbtn'>Services ▾</Link>
+          <a href="/#services" className='dropbtn'>Services ▾</a>
             <div className="dropdownContent">
               <a href="/website-development-in-Bangladesh">Web Development</a>
-              <a href="/graphics-design">Graphics and Design</a>
-              <a href="/video-making">Promotional Video</a>
-              <a href="/video-editing">Video editing</a>
+              <a href="/graphics-and-brand-design">Graphics and Design</a>
+              <a href="/promotional-video-making-in-bangladesh">Promotional Video</a>
+              <a href="/seo-expert-in-bangladesh">SEO Expert</a>
               <a href="/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
               <a href="/mobile-app-development">Mobile App Development</a>
             </div>
           </div>
           <div className="dropdown">
-            <Link href="/#" className='dropbtn'>Packages ▾</Link>
+            <a href="/#packages" className='dropbtn'>Packages ▾</a>
             <div className="dropdownContent">
               <a href="/starter-package">Starter Package</a>
               <a href="/business-package">Business Package</a>
@@ -85,10 +85,10 @@ export default function Navbar() {
           <div className='m-dropdown' onClick={()=> {setDrop(!dropActive)}}>Services ▾</div>
             <div className={`m-dropdownContent ${dropActive ? 'active' : ''}`}>
               <a href="/website-development-in-Bangladesh">Web Development</a>
-              <a href="/expert-digital-marketing-in-Bangladesh">Graphics and Design</a>
-              <a href="/video-making">Promotional Video</a>
-              <a href="/video-editing">Video editing</a>
-              <a href="/social-media-manager">Social Media Manager</a>
+              <a href="/graphics-and-brand-design">Graphics and Design</a>
+              <a href="/promotional-video-making-in-bangladesh">Promotional Video</a>
+              <a href="/seo-expert-in-bangladesh">SEO Expert</a>
+              <a href="/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
               <a href="/mobile-app-development">Mobile App Development</a>
             </div>
             

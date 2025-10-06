@@ -29,9 +29,9 @@ const packages: Package[] = [
 
 export default function Packages() {
   return (
-    <div className="pack-page">
+    <div className="pack-page" id='packages'>
       <h2>Choose Any Package You Need</h2>
-      <section className="packages">
+      <section className="packages" >
         <div className="package-grid">
           {packages.map((pkg, index) => (
             <div key={index} className="package-card">
@@ -45,6 +45,10 @@ export default function Packages() {
             </div>
           ))}
         </div>
+      </section>
+      <section className="custom-package">
+        <h3 className='custom'>If You Need <strong>Custom Package</strong> within your budget? <br />Click Here</h3>
+        <button className='contact-btn'>Contact Us</button>
       </section>
     </div>
   );
