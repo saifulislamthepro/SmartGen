@@ -11,7 +11,7 @@ export default function Hero() {
         <h1>SmartGen Digital</h1>
         <span className="slogan">Build for Next-Gen Businesses</span>
         <p>SmartGen Digital empowers Bangladeshi brands with futuristic marketing, design, and web solutions.</p>
-        <button className="hero-button">Explore Services</button>
+        <a href="#services"><button className="hero-button">Explore Services</button></a>
       </div>
     </div>
   </section>

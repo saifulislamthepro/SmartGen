@@ -48,21 +48,21 @@ export default function Navbar() {
           <div className="dropdown">
           <a href="/#services" className='dropbtn'>Services ▾</a>
             <div className="dropdownContent">
-              <a href="/website-development-in-Bangladesh">Web Development</a>
-              <a href="/graphics-and-brand-design">Graphics and Design</a>
-              <a href="/promotional-video-making-in-bangladesh">Promotional Video</a>
-              <a href="/seo-expert-in-bangladesh">SEO Expert</a>
-              <a href="/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
-              <a href="/mobile-app-development">Mobile App Development</a>
+              <a href="/services/website-development-in-Bangladesh">Web Development</a>
+              <a href="/services/graphics-and-brand-design">Graphics and Design</a>
+              <a href="/services/promotional-video-making-in-bangladesh">Promotional Video</a>
+              <a href="/services/seo-expert-in-bangladesh">SEO Expert</a>
+              <a href="/services/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
+              <a href="/services/mobile-app-development">Mobile App Development</a>
             </div>
           </div>
           <div className="dropdown">
             <a href="/#packages" className='dropbtn'>Packages ▾</a>
             <div className="dropdownContent">
-              <a href="/starter-package">Starter Package</a>
-              <a href="/business-package">Business Package</a>
-              <a href="/premium-package">Premium Package</a>
-              <a href="/premium-package">Custom Package</a>
+              <a href="/packages/startup">Starter Package</a>
+              <a href="/packages/business">Business Package</a>
+              <a href="/packages/premium">Premium Package</a>
+              <a href="/packages/custom-package">Custom Package</a>
             </div>
           </div>
           <Link href="/portfolio">Portfolio</Link>
@@ -84,20 +84,20 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <div className='m-dropdown' onClick={()=> {setDrop(!dropActive)}}>Services ▾</div>
             <div className={`m-dropdownContent ${dropActive ? 'active' : ''}`}>
-              <a href="/website-development-in-Bangladesh">Web Development</a>
-              <a href="/graphics-and-brand-design">Graphics and Design</a>
-              <a href="/promotional-video-making-in-bangladesh">Promotional Video</a>
-              <a href="/seo-expert-in-bangladesh">SEO Expert</a>
-              <a href="/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
-              <a href="/mobile-app-development">Mobile App Development</a>
+              <a href="/services/website-development-in-Bangladesh">Web Development</a>
+              <a href="/services/graphics-and-brand-design">Graphics and Design</a>
+              <a href="/services/promotional-video-making-in-bangladesh">Promotional Video</a>
+              <a href="/services/seo-expert-in-bangladesh">SEO Expert</a>
+              <a href="/services/expert-digital-marketing-in-Bangladesh">Social Media Manager</a>
+              <a href="/services/mobile-app-development">Mobile App Development</a>
             </div>
             
           <div className='m-dropdown' onClick={()=> {setpDrop(!pdropActive)}}>Packages ▾</div>
             <div className={`pm-dropdownContent ${pdropActive ? 'active' : ''}`}>
-              <a href="/starter-package">Starter Package</a>
-              <a href="/business-package">Business package</a>
-              <a href="/premium-package">Premium Package</a>
-              <a href="/premium-package">Custom Package</a>
+              <a href="/packages/startup">Starter Package</a>
+              <a href="/packages/business">Business package</a>
+              <a href="/packages/premium">Premium Package</a>
+              <a href="/packages/custom-package">Custom Package</a>
             </div>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/contact">Contact</Link>

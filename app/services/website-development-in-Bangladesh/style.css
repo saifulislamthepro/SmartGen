@@ -17,7 +17,7 @@
 }
 
 .dev-hero {
-  background-image: url("../../public/Images/Digital-banner.jpg");
+  background-image: url("../../../public/Images/webdev-hero.jpg");
   background-repeat: no-repeat;
   background-position: left;
   object-fit: cover;

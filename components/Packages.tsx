@@ -32,22 +32,24 @@ export default function Packages() {
     <div className="pack-page" id='packages'>
       <h2>Choose Any Package You Need</h2>
       <section className="packages" >
-        <div className="package-grid">
+        <div className="home-package-grid">
           {packages.map((pkg, index) => (
-            <div key={index} className="package-card">
+            <div key={index} className="home-package-card">
               <h3>{pkg.name.toUpperCase()}</h3>
               <ul>
                 {pkg.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
-              <button className="package-button">Start Now</button>
+              <a href={`/packages/${pkg.name.toLowerCase()}`}>
+                <button className="package-button">Start Now</button>
+              </a>
             </div>
           ))}
         </div>
       </section>
       <section className="custom-package">
-        <h3 className='custom'>If You Need <strong>Custom Package</strong> within your budget? <br />Click Here</h3>
+        <h3 className='custom'>If You Need <strong>Custom Package</strong> within your budget?</h3>
         <button className='contact-btn'>Contact Us</button>
       </section>
     </div>

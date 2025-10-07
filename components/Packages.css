@@ -1,16 +1,22 @@
 /* homepage.css */
-
-.packages {
+.pack-page{
+  background-color: #ffffff;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.packages{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 1rem;
+  flex-direction: column;
 }
-.pack-page{
-  background-color: #ffffff;
-}
+
+
 .pack-page h2{
   font-size: 2rem;
   text-align: center;
@@ -19,32 +25,31 @@
   padding-top: 4rem;
 }
 
-.package-grid {
+.home-package-grid {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  width: 1200px;
+  margin: 1rem;
 }
 
-.package-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.home-package-card {
+  width: 100%;
   background-color: #fff;
   border: 2px solid #e0e0e0;
   border-radius: 12px;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
-.package-card:hover {
+.home-package-card:hover {
   transform: translateY(-5px);
   border-color: orangered;
 }
 
-.package-card h3 {
+.home-package-card h3 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: orangered;
@@ -53,27 +58,29 @@
   padding: 6px;
 }
 
-.package-card .price {
+.home-package-card .price {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.package-card ul {
+.home-package-card ul {
   list-style: none;
-  padding: 0;
   margin-bottom: 1.5rem;
 }
 
-.package-card li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+.home-package-card li {
+  margin: 2px 0;
+  font-size: 1.3rem;
+  background-color: #f1f1f1f1;
   color: #555;
+  padding: 0.5rem 0;
   text-align: left;
+  padding-left: 1rem;
 }
 
-.package-card li::before {
+.home-package-card li::before {
   content: "✓"; /* Unicode checkmark */
   color: #FF6A00; /* Your brand accent */
   font-weight: bold;
@@ -100,6 +107,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 1rem;
 }
 .custom{
   text-align: center;
@@ -123,7 +131,10 @@
   scale: 1.1;
 }
 @media (max-width:760px) {
-  .package-card{
+  .home-package-card{
     grid-column: span 3;
+  }
+  .custom{
+    font-size: 1.5rem;
   }
 }

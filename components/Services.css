@@ -2,29 +2,28 @@
 .service-page{
     padding: 4rem 0;
     background-color: #dafeff;
-}
-
-.service-page h2{
-    font-size: 2rem;
-    color: rgb(40, 47, 54);
-    text-align: center;
-    padding: 1rem;
-    padding-top: 0.8rem;
-    font-weight: bolder;
-}
-
-.service-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.service-page h2{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #555;
+}
+
+.service-container{
     padding: 1rem;
 }
 
 .hero-grid{
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 6rem;
-    max-width: 1200px;
+    gap: 5rem;
 }
 
 .hero-card{
@@ -47,7 +46,7 @@
 .hero-card h2{
     font-size: 1.5rem;
     padding: 4px;
-    color: rgb(0, 84, 153);
+    color: #3d4a53;
 }
 
 @media (max-width: 760px) {
