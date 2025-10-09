@@ -49,8 +49,8 @@ export default function Packages() {
         </div>
       </section>
       <section className="custom-package">
-        <h3 className='custom'>If You Need <strong>Custom Package</strong> within your budget?</h3>
-        <button className='contact-btn'>Contact Us</button>
+        <h3 className='custom'>If You Need <strong>Custom Package</strong> within your budget?<br />create Custom Package</h3>
+        <a href="/packages/custom-package"><button className='contact-btn'>Custom Order</button></a>
       </section>
     </div>
   );

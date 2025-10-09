@@ -38,6 +38,7 @@ export default function Navbar() {
   if (!mounted) return null;
   return (
     <header className="navbar">
+      <div className="nav-holder">
       <div className="navbar-container" ref={menuRef}>
         <Link href="/" className="navbar-logo">
           <img src="/Images/Logo.svg" alt="Smartgen" width={80} />
@@ -102,6 +103,7 @@ export default function Navbar() {
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/contact">Contact</Link>
         </nav>
+      </div>
       </div>
     </header>
   );

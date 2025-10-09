@@ -45,14 +45,6 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>Contact SmartGen | Digital Marketing Agency in Bangladesh</title>
-        <meta
-          name="description"
-          content="Get in touch with SmartGen for premium web development and digital marketing services in Bangladesh."
-        />
-      </Head>
-
       <main className="contact-page">
         <section className="contact-hero">
           <h1>📬 Contact SmartGen</h1>

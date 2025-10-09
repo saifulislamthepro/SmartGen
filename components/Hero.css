@@ -1,77 +1,149 @@
-.hero {
-  padding: 2rem;
-  background: radial-gradient(circle at center, #533e15, #000);
-  color: #fff;
-  align-items: center;
+
+
+.hero{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e8e9e2;
 }
 
+.hero .container{
+  width: 100%;
+  max-width: 1200px;
+}
 
-.hero-content{
-  height: 90vh;
-  scale: 1.5;
+.hero .container .contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.contact-header .left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-header .left .phone{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero-text{
+.contact-header .left p{
+  display: inline;
+  margin-left: 0.5rem;
+}
+.contact-header .left .email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero .container .contact-header .right i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  background-color: #f1f1f1;
+}
+
+/********----Static nav------**********/
+.navbar{
+  display: none;
+}
+.static-nav{
   width: 100%;
 }
-.hero-text p{
-  letter-spacing: 1px;
-  font-size: 16px;
+ #static-nav .navbar{
+  display: flex;
+  background: none;
 }
 
-.hero-text h1 {
-  text-align: center;
+ #static-nav .navbar .navbar-container{
+  position: static;
+  max-width: 1200px;
+  background: none;
+}
+
+
+
+/*-------Hero-Main-------*/
+
+.hero-main{
+  display: grid;
+  grid-template-columns: 1fr 0.6fr 1fr;
+  grid-auto-flow: 1rem;
+  min-height: 700px;
+  padding:0 1rem;
+}
+.hero-main .hero-left{
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero-main .hero-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-main .hero-left h1{
   font-size: 3rem;
-  margin-top: -7px;
-  line-height: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 0;
+  color: orange;
+  line-height: 2.5rem;
+}
+
+.hero-main .hero-left .seo-title{
+  font-size: 2.5rem;
+  color: orangered;
+}
+.hero-main .hero-left .slogan{
+  font-size: 2rem;
+  color: orange;
+  margin-top: 2rem;
+}
+
+.hero-left p{
+  font-size: 20px;
+  color: #555;
+}
+
+.hero-button{
+  font-size: 20px;
+  background-color: orangered;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
   border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.hero-text .slogan{
-  font-size: 1.8rem;
-  color: #FF6A00;
-}
-
-.hero-button {
   margin-top: 1rem;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid #FF6A00;
-  color: #FFB347;
-  padding: 12px 30px;
-  border-radius: 15px;
   cursor: pointer;
 }
 
 .hero-button:hover{
-  background: rgba(255,255,255,0.2);
+  transform: translateY(-3);
+  transition: transform 0.1s ease-in;
+  background-color: orange;
 }
 
-
-@media (max-width: 1080px) {
-  .hero{
-    height: fit-content;
+@media (max-width: 768px) {
+  .hero-main{
     grid-template-columns: 1fr;
-  }
+  }  
 
-  .hero-content{
-    scale: 1;
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 668px) {  
-  .hero-text .slogan{
-    line-height: 1.5rem;
-  }
-  .hero-text h1{
-    font-size: 2rem;
-    line-height: 38px;
+  .hero .container .contact-header{
+    display: none;
   }
 }
